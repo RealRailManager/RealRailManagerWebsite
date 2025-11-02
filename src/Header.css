@@ -43,12 +43,13 @@ body:hover .header,
   gap: 1.5rem;
 }
 
-.nav p {
+a {
+  color: white;
   margin: 0;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
-.nav p:hover {
+a:hover {
   color: #61dafb;
 }

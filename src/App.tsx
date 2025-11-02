@@ -1,21 +1,21 @@
 import Header from "./Header";
 import "./Global.css";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home";
+import Install from "./pages/install";
+import Contact from "./pages/contact";
+import ModAuthor from "./pages/modAuthor";
 
 export default function App() {
   return (
-    <>
-      <div className="video-container">
-        <video autoPlay loop muted playsInline className="background-video">
-          <source src="derail.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <Header />
-
-      <div className="content">
-        <h1>Real Rail Manager</h1>
-        <p>W.I.P, come back later :)</p>
-      </div>
-    </>
+    <Router>
+        <Header/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/install" element={<Install />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/mod-author" element={<ModAuthor />} />
+      </Routes>
+    </Router>
   );
 }

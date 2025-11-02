@@ -32,3 +32,31 @@ body, html, #root {
   color: white;
   font-size: 2rem;
 }
+
+.installButtons {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.installButtons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.installButtons li,
+.installButtons button {
+  margin: 10px;
+  width: 50%;
+  font-size: 4rem;
+  text-align: center;
+}
